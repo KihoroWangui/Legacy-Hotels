@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="navbar-logo">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <ul>
+        <li><a href="/signup">Reservation</a></li>
+        <li><a href="/login">Menu</a></li>
+        <li><a href="/milestones">Events</a></li>
+      </ul>
+    </nav>
+    <h1>Hotel Reservation System</h1>
+    <div class="booking-form">
+      <h2>Book a Room</h2>
+      <form id="bookingForm">
+        <input type="text" id="guestName" placeholder="Guest Name" required />
+        <input
+          type="number"
+          id="roomNumber"
+          placeholder="Room Number"
+          required
+        />
+        <input type="date" id="checkInDate" required />
+        <input type="date" id="checkOutDate" required />
+        <button type="submit">Book Room</button>
+      </form>
+    </div>
+
+    <div class="booked-rooms">
+      <h2>Booked Rooms</h2>
+      <ul id="bookedRoomsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
