@@ -1,3 +1,30 @@
+// Room data
+const rooms = [
+  { id: 1, name: "Single Room", price: 100, available: true },
+  { id: 2, name: "Double Room", price: 150, available: false },
+  { id: 3, name: "Suite", price: 300, available: true },
+  { id: 4, name: "Deluxe Suite", price: 400, available: false },
+];
+
+// Function to display rooms
+function displayRooms() {
+  const container = document.getElementById("rooms-container");
+
+  rooms.forEach((room) => {
+    const roomDiv = document.createElement("div");
+    roomDiv.className = "room";
+    roomDiv.innerHTML = `
+      <h3>${room.name}</h3>
+      <p>Price: $${room.price} per night</p>
+      <p>Status: ${room.available ? "Available" : "Booked"}</p>
+      ${room.available ? "<button>Book Now</button>" : ""}
+    `;
+    container.appendChild(roomDiv);
+  });
+}
+
+// Initialize room display
+displayRooms();
 // script.js
 document.addEventListener("DOMContentLoaded", loadBookings);
 
