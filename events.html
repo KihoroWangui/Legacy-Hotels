@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <style>
+      body {
+        background-image: url("pexels-seven11nash-380768.jpg");
+      }
+    </style>
     <nav>
-      <a href="/" class="navbar-logo">
-        <img src="images/logo.png" alt="Logo" />
-      </a>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="rooms.html">Rooms</a></li>
@@ -18,27 +20,37 @@
         <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
-    <h1>Hotel Reservation System</h1>
-    <div class="booking-form">
-      <h2>Book a Room</h2>
-      <form id="bookingForm">
-        <input type="text" id="guestName" placeholder="Guest Name" required />
-        <input
-          type="number"
-          id="roomNumber"
-          placeholder="Room Number"
-          required
-        />
-        <input type="date" id="checkInDate" required />
-        <input type="date" id="checkOutDate" required />
-        <button type="submit">Book Room</button>
-      </form>
-    </div>
+    <section class="events">
+      <h1>Upcoming Events</h1>
 
-    <div class="booked-rooms">
-      <h2>Booked Rooms</h2>
-      <ul id="bookedRoomsList"></ul>
-    </div>
+      <!-- Event 1 -->
+      <div class="event">
+        <h2>Business Conference 2024</h2>
+        <p class="time">Date & Time: <span>December 5, 2024, 10:00 AM</span></p>
+        <p class="room">Conference Room: <span>Grand Ballroom</span></p>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event">
+        <h2>Product Launch - Tech Innovations</h2>
+        <p class="time">Date & Time: <span>December 7, 2024, 2:00 PM</span></p>
+        <p class="room">Conference Room: <span>Innovation Hall</span></p>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event">
+        <h2>Wedding Reception</h2>
+        <p class="time">Date & Time: <span>December 10, 2024, 6:00 PM</span></p>
+        <p class="room">Conference Room: <span>Oceanview Suite</span></p>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="event">
+        <h2>Annual General Meeting</h2>
+        <p class="time">Date & Time: <span>December 15, 2024, 9:00 AM</span></p>
+        <p class="room">Conference Room: <span>Sky Lounge</span></p>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

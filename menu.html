@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Reservation System</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
-      <a href="/" class="navbar-logo">
-        <img src="images/logo.png" alt="Logo" />
-      </a>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="rooms.html">Rooms</a></li>
@@ -18,27 +15,78 @@
         <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
-    <h1>Hotel Reservation System</h1>
-    <div class="booking-form">
-      <h2>Book a Room</h2>
-      <form id="bookingForm">
-        <input type="text" id="guestName" placeholder="Guest Name" required />
-        <input
-          type="number"
-          id="roomNumber"
-          placeholder="Room Number"
-          required
-        />
-        <input type="date" id="checkInDate" required />
-        <input type="date" id="checkOutDate" required />
-        <button type="submit">Book Room</button>
-      </form>
-    </div>
 
-    <div class="booked-rooms">
-      <h2>Booked Rooms</h2>
-      <ul id="bookedRoomsList"></ul>
-    </div>
+    <section class="menu">
+      <h1>Our Menu</h1>
+
+      <!-- Appetizers Section -->
+      <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+          <h3>Bruschetta</h3>
+          <p class="description">
+            Grilled bread topped with garlic, tomatoes, and basil.
+          </p>
+          <span class="price">$8.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Stuffed Mushrooms</h3>
+          <p class="description">Mushrooms filled with cheese and herbs.</p>
+          <span class="price">$7.99</span>
+        </div>
+      </div>
+
+      <!-- Main Courses Section -->
+      <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+          <h3>Grilled Salmon</h3>
+          <p class="description">
+            Served with a lemon butter sauce and seasonal vegetables.
+          </p>
+          <span class="price">$18.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Steak Frites</h3>
+          <p class="description">
+            Tender steak served with crispy French fries.
+          </p>
+          <span class="price">$22.99</span>
+        </div>
+      </div>
+
+      <!-- Desserts Section -->
+      <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+          <h3>Chocolate Lava Cake</h3>
+          <p class="description">Rich chocolate cake with a molten center.</p>
+          <span class="price">$6.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Cheesecake</h3>
+          <p class="description">
+            Classic cheesecake with a graham cracker crust.
+          </p>
+          <span class="price">$5.99</span>
+        </div>
+      </div>
+
+      <!-- Beverages Section -->
+      <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+          <h3>Coffee</h3>
+          <p class="description">Freshly brewed coffee.</p>
+          <span class="price">$2.99</span>
+        </div>
+        <div class="menu-item">
+          <h3>Orange Juice</h3>
+          <p class="description">Freshly squeezed orange juice.</p>
+          <span class="price">$3.99</span>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

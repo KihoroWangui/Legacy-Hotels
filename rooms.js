@@ -1,9 +1,8 @@
 // Room data
 const rooms = [
   { id: 1, name: "Single Room", price: 100, available: true },
-  { id: 2, name: "Double Room", price: 150, available: false },
+
   { id: 3, name: "Suite", price: 300, available: true },
-  { id: 4, name: "Deluxe Suite", price: 400, available: false },
 ];
 
 // Function to display rooms

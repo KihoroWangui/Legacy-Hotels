@@ -1,20 +1,18 @@
 body {
-  background-image: url("pexels-pixabay-164595.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   display: center;
   flex-direction: column;
   align-items: flex;
 }
-h3{
-  color:white;
-  h2{
-    color:white;
+h3 {
+  color: white;
+  h2 {
+    color: white;
   }
 }
-p{
-  color:white;
+p {
+  color: rgb(39, 39, 39);
 }
 nav {
   background-color: #050505;
@@ -149,7 +147,7 @@ button:hover {
   font-size: 0.9em;
   color: #666;
   margin: 5px 0;
-
+}
 .price {
   font-weight: bold;
   color: #27ae60;
